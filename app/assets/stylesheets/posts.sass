@@ -1,0 +1,2228 @@
+@import url(//www.blogger.com/static/v1/widgets/2258130529-css_bundle_v2.css)
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700)
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css)
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var
+  padding: 0
+  border: 0
+  outline: 0
+  vertical-align: baseline
+  background: 0 0
+  margin: 0
+
+ins
+  text-decoration: underline
+
+del
+  text-decoration: line-through
+
+dl
+  list-style-position: inside
+  font-weight: 700
+  list-style: none
+
+ul
+  list-style-position: inside
+  font-weight: 700
+  list-style: none
+
+  li
+    list-style: none
+
+caption, th
+  text-align: center
+
+img
+  border: none
+  position: relative
+
+.clear
+  clear: both
+
+.section
+  margin: 0
+  padding: 0
+
+.widget
+  margin: 0
+  padding: 0
+
+  ul
+    margin: 0
+    padding: 0
+
+body
+  background: #fff
+  color: #010101
+  font-size: 14px
+  font-family: 'Montserrat',sans-serif
+  line-height: 22px
+  word-wrap: break-word
+
+h1, h2, h3, h4, h5, h6
+  padding: 0
+  margin: 0
+
+h2
+  color: #010101
+  margin: 1.5em 0 .75em
+
+h4 a
+  color: #4285f4 !important
+
+a
+  &:link, &:hover, &:visited
+    color: #f2132d
+    text-decoration: none
+
+\:focus
+  outline: 0
+
+a img
+  border: 0
+
+brc
+  color: #bdbdbd
+
+select
+  -webkit-appearance: none !important
+  -moz-appearance: none !important
+  appearance: none !important
+
+  &::-ms-expand
+    display: none !important
+
+.separator a
+  clear: none !important
+  float: none !important
+  margin-left: 0 !important
+  margin-right: 0 !important
+
+#navbar-iframe
+  display: none
+  height: 0
+  visibility: hidden
+
+span.item-control, a.quickedit, .archive .home-link, .index .home-link, .home-link
+  display: none !important
+
+*
+  outline: 0
+  transition: all .3s ease
+  -webkit-transition: all .3s ease
+  -moz-transition: all .3s ease
+  -o-transition: all .3s ease
+
+#outer-wrapper
+  max-width: 100%
+  margin: 10px auto 0
+  background-color: #FFF
+
+.row
+  width: 1130px
+
+#topnav
+  width: 100%
+  height: 30px
+  background-color: #fff
+  margin: 0
+
+.tm-head
+  margin: 0 auto
+  height: 30px
+  line-height: 30px
+  overflow: hidden
+
+.tm-menu
+  float: left
+
+#nav1 li
+  float: left
+  display: inline-block
+  line-height: 30px
+  padding: 0
+
+  a
+    color: #010101
+    font-size: 12px
+    font-weight: 400
+
+    &:hover
+      color: #f2132d
+
+.tn-head #social-top ul li a:hover
+  color: #f2132d
+
+#nav1 li + li:before
+  content: "|"
+  padding: 0 7px
+  color: #ddd
+  font-weight: 100
+
+.social-area
+  float: right
+
+.tm-head #social-top
+  position: relative
+  display: block
+  margin-right: 0
+
+  ul
+    overflow: hidden
+
+    li
+      line-height: 32px
+      display: block
+      float: left
+      margin-left: 15px
+      padding: 0
+
+      a
+        display: block
+        float: left
+        color: #010101
+        text-decoration: none
+        font-size: 13px
+
+        &:before
+          display: inline-block
+          font-family: FontAwesome
+          font-style: normal
+          font-weight: 400
+          -webkit-font-smoothing: antialiased
+          -moz-osx-font-smoothing: grayscale
+
+        &:hover
+          color: #f2132d
+
+#social-top
+  .facebook:before
+    content: "\f09a"
+
+  .twitter:before
+    content: "\f099"
+
+  .gplus:before
+    content: "\f0d5"
+
+  .rss:before
+    content: "\f09e"
+
+  .youtube:before
+    content: "\f167"
+
+  .skype:before
+    content: "\f17e"
+
+  .stumbleupon:before
+    content: "\f1a4"
+
+  .tumblr:before
+    content: "\f173"
+
+  .vine:before
+    content: "\f1ca"
+
+  .stack-overflow:before
+    content: "\f16c"
+
+  .linkedin:before
+    content: "\f0e1"
+
+  .dribbble:before
+    content: "\f17d"
+
+  .soundcloud:before
+    content: "\f1be"
+
+  .behance:before
+    content: "\f1b4"
+
+  .digg:before
+    content: "\f1a6"
+
+  .instagram:before
+    content: "\f16d"
+
+  .pinterest:before
+    content: "\f0d2"
+
+  .delicious:before
+    content: "\f1a5"
+
+  .codepen:before
+    content: "\f1cb"
+
+#header-blog
+  height: 130px
+  background-color: #fff
+  position: relative
+  overflow: hidden
+
+.header-content
+  margin: 0 auto
+  overflow: hidden
+  height: 130px
+
+.header-logo
+  width: 222px
+  height: 52px
+  float: left
+
+  img
+    height: auto
+    margin: 42px 0 0
+    max-width: 100%
+
+.Header h1
+  color: #010101
+  margin-bottom: 10px
+  margin-top: 32px
+  font-size: 40px
+
+.header-ads
+  width: 729px
+  max-width: 100%
+  max-height: 90px
+  float: right
+  margin: 15px 0 0
+
+#header-navigation
+  margin: 0 auto
+  top: 0
+  height: 40px
+
+.nav-wrapper
+  background-color: #010101
+  width: 100%
+  max-width: 1170px
+  margin: 0 auto
+  box-sizing: border-box
+  min-height: 40px
+
+.header-menu li.home-child
+  float: left
+  height: 40px
+  display: inline-block
+  padding: 0
+
+  a
+    height: 40px
+    line-height: 40px
+    font-size: 13px
+    font-weight: 700
+    color: #FFF
+    padding-right: 28px
+    padding-left: 28px
+    text-transform: uppercase
+
+#menu ul li
+  float: left
+  height: 40px
+  display: inline-block
+  padding: 0
+  margin-right: 1px
+  transition: all 0.3s ease-out !important
+  -webkit-transition: all 0.3s ease-out !important
+  -moz-transition: all 0.3s ease-out !important
+  -o-transition: all 0.3s ease-out !important
+
+  &:hover a
+    color: #FFF
+
+.sticky-wrapper.is-sticky #header-navigation
+  width: 100% !important
+  background: #000
+  z-index: 9999
+
+#menu ul li
+  a
+    height: 40px
+    line-height: 40px
+    padding: 12px
+    padding-right: 28px
+    padding-left: 28px
+    font-size: 13px
+    text-transform: uppercase
+    font-weight: 700
+    color: #E4E4E4
+    transition: all 0.3s ease-out !important
+    -webkit-transition: all 0.3s ease-out !important
+    -moz-transition: all 0.3s ease-out !important
+    -o-transition: all 0.3s ease-out !important
+
+  &.hasSub
+    a
+      padding-right: 32px
+
+      &:after
+        color: #fff
+        margin-left: 3px
+        margin-top: 1px
+        position: absolute
+        display: inline-block
+        content: '\f107'
+        font-family: FontAwesome
+        font-weight: 400
+        font-size: 15px
+        text-rendering: auto
+        transition: all 0.3s ease-out !important
+        -webkit-transition: all 0.3s ease-out !important
+        -moz-transition: all 0.3s ease-out !important
+        -o-transition: all 0.3s ease-out !important
+
+    ul li a:after
+      display: none !important
+
+  &:hover ul
+    left: auto
+    z-index: 9999
+
+  ul
+    position: absolute
+    left: -9999px
+    z-index: 9999
+    width: 170px
+    margin: 0
+    padding: 0
+
+    li
+      background-color: #010101
+      float: none !important
+      display: block
+      padding: 0
+      margin-right: 0
+      height: auto
+
+      &:hover
+        background-color: #212121
+
+    &#sub-menu li
+      a
+        padding: 10px
+        font-size: 11px
+        line-height: 36px
+        text-transform: uppercase
+        text-decoration: none
+        color: #E4E4E4 !important
+        font-weight: 700
+        height: auto
+
+      &:hover a
+        color: #FFF !important
+
+    outline: 0
+    transition: all 0 ease !important
+    -webkit-transition: all 0 ease !important
+    -moz-transition: all 0 ease !important
+    -o-transition: all 0 ease !important
+
+  outline: 0
+  transition: all 0 ease !important
+  -webkit-transition: all 0 ease !important
+  -moz-transition: all 0 ease !important
+  -o-transition: all 0 ease !important
+
+.selectnav
+  display: none
+
+#selectnav1
+  background: #212121 url(//4.bp.blogspot.com/-XmVTbf5RQLY/VmT4NfoMGOI/AAAAAAAACSI/F2sRS-yCpPI/s1600-r/menu.png) no-repeat right top
+  margin-top: 0
+
+select.selectnav
+  option:fist-child
+    text-transform: uppercase
+
+  color: #E4E4E4
+  padding: 0 5px 0 10px
+  border: 0
+  font: 14px Montserrat, sans-serif
+  cursor: pointer
+  width: 100%
+  height: 40px
+  line-height: 40px
+  border-radius: 0
+
+.header-search
+  position: relative
+  float: right
+
+  li
+    list-style: none
+
+  a
+    &.search
+      -webkit-transition: all .3s ease-out 0
+      -moz-transition: all .3s ease-out 0
+      transition: all .3s ease-out 0
+      cursor: pointer
+      display: block
+      height: 40px
+      text-align: center
+      position: relative
+      right: 0
+      top: 0
+      width: 40px
+      border-radius: 0
+
+      &:hover
+        background-color: #f2132d
+
+      &:before
+        color: #E4E4E4
+        content: '\f002'
+        font: normal normal normal 22px/1 FontAwesome
+        font-size: inherit
+        text-rendering: auto
+        -webkit-font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+        line-height: 40px
+
+    &.active:before
+      color: #FFF
+
+    &.search
+      &:hover:before
+        color: #FFF
+
+      &.active
+        background-color: #f2132d
+        border-left: 0
+        border-radius: 0
+
+        form
+          display: block
+
+      form
+        display: none
+        position: absolute
+        right: 40px
+        top: 0
+        z-index: 2
+
+        input
+          box-shadow: none
+          height: 40px
+          padding: 0 12px
+          width: 160px
+          background-color: #212121
+          font-family: 'Montserrat', sans-serif
+          color: #fff
+          margin-top: 0
+          border-radius: 0
+          border: 0
+          line-height: 40px
+
+#header-navigation .header-search li a
+  cursor: pointer
+  -webkit-transition: all .3s ease-out 0
+  -moz-transition: all .3s ease-out 0
+  transition: all .3s ease-out 0
+
+#content-wrapper
+  margin: 25px auto 5px
+  overflow: hidden
+
+#main-wrapper
+  float: left
+  margin-right: 25px
+  overflow: hidden
+  width: 755px
+  word-wrap: break-word
+  border-right: 1px solid #f3f3f3
+  padding-right: 27px
+
+.m-rec
+  margin-bottom: 0
+  padding-bottom: 3px
+
+  h2
+    display: inline-block
+
+    a
+      color: #CBCBCB
+      font-weight: 700
+      line-height: normal
+      font-size: 13px
+      text-transform: uppercase
+      display: block
+
+#ads-blog
+  display: none
+
+.home #ads-blog
+  display: block
+
+.home-ad .widget
+  width: 728px
+  max-height: 90px
+  padding: 5px 0 20px
+  margin: 0 auto
+
+.ads-posting .home-ad .widget
+  width: 728px
+  max-height: 90px
+  margin: 0 auto
+  padding: 20px 0 5px
+
+.feat-layout .feat-title h2.title
+  font-size: 13px
+  font-weight: 500
+  display: inline-block
+
+.feat-title
+  margin: 0
+
+  h2
+    padding: 0 0 10px
+    display: inline-block
+
+    a
+      color: #CBCBCB
+      font-weight: 700
+      line-height: normal
+      font-size: 13px
+      text-transform: uppercase
+      display: block
+
+.p-date
+  color: #bdbdbd
+  font-weight: 400
+  font-size: 12px
+
+  &:before
+    content: '\f133'
+    font-family: fontawesome
+    color: #bdbdbd
+
+.p-author
+  &:before
+    content: '\f007'
+    font-family: fontawesome
+    color: #bdbdbd
+
+  color: #bdbdbd
+  font-weight: 400
+  font-size: 12px
+
+.intro
+  position: relative
+  margin-bottom: 35px
+
+  .widget .feat-content
+    margin-bottom: 20px !important
+    height: 585px
+    overflow: hidden
+
+  h2
+    display: none
+    display: none
+
+  .rcp-thumb
+    width: 100%
+    height: 292px
+    display: block
+    transition: all 0.3s ease-out !important
+    -webkit-transition: all 0.3s ease-out !important
+    -moz-transition: all 0.3s ease-out !important
+    -o-transition: all 0.3s ease-out !important
+
+  li:hover .rcp-thumb
+    -webkit-transform: scale(1.1) important
+    -moz-transform: scale(1.1) !important
+    transform: scale(1.1) !important
+    transition: all 0.3s ease-out !important
+    -webkit-transition: all 0.3s ease-out !important
+    -moz-transition: all 0.3s ease-out !important
+    -o-transition: all 0.3s ease-out !important
+
+  .rcp-title
+    font-size: 20px
+
+  .rcp-thumb:after
+    content: no-close-quote
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 151px
+    background: url(//2.bp.blogspot.com/-prvvB8O4yno/Vpxm7GhblYI/AAAAAAAACmo/lGho0jYx-Eg/s1600-r/gradient.png) repeat-x
+    background-size: 100% 151px
+    opacity: .8
+
+  li
+    width: 50%
+    height: 292px
+    position: relative
+    padding: 0
+    z-index: 2
+    overflow: hidden
+    background-color: #010101 !important
+
+    &:nth-child(2)
+      margin-bottom: 1px
+
+    &:first-child
+      width: 49.912%
+      height: 585px
+      margin-right: 1px
+
+      .rcp-thumb
+        height: 585px
+
+      .rcp-title
+        font-size: 35px
+
+  .post-panel
+    position: absolute
+    bottom: 20px
+
+  .rcp-title a
+    color: #FFF
+    font-weight: 700
+    position: relative
+    bottom: 10px
+    line-height: 14px
+
+  .rcp-thumb:after
+    left: 0
+
+  li
+    float: right
+
+    &:first-child
+      float: left
+
+  .post-panel
+    left: 20px
+    right: 20px
+
+.item .intro
+  display: none
+
+.feat
+  .primeiro-thumb, .mag-thumb
+    transition: all 0.3s ease-out !important
+    -webkit-transition: all 0.3s ease-out !important
+    -moz-transition: all 0.3s ease-out !important
+    -o-transition: all 0.3s ease-out !important
+
+.carousel.recent-block .mag-thumb
+  transition: all 0.3s ease-out !important
+  -webkit-transition: all 0.3s ease-out !important
+  -moz-transition: all 0.3s ease-out !important
+  -o-transition: all 0.3s ease-out !important
+
+.feat
+  .primeiro-thumb:hover, .mag-thumb:hover
+    -webkit-transform: scale(1.1) important
+    -moz-transform: scale(1.1) !important
+    transform: scale(1.1) !important
+    transition: all 0.3s ease-out !important
+    -webkit-transition: all 0.3s ease-out !important
+    -moz-transition: all 0.3s ease-out !important
+    -o-transition: all 0.3s ease-out !important
+
+  .primeiro .feat-thumb
+    width: 100%
+    height: 300px
+
+  .primeiro-thumb
+    width: 100%
+    height: 300px
+    display: block
+
+  .primeiro
+    overflow: hidden
+
+.feat-thumb, .feat1 ul
+  overflow: hidden
+
+.feat
+  ul li
+    .feat-thumb
+      width: 100%
+      height: 150px
+      margin-bottom: 10px
+
+    .mag-thumb
+      width: 100%
+      height: 150px
+      display: block
+
+    .mag-content
+      display: block
+
+  .feat-headline a
+    font-weight: 700
+    color: #010101
+    display: inline-block
+
+  ul li .mag-content .feat-headline a
+    font-size: 16px
+    padding: 6px 5px 0 0
+    line-height: 1.33
+    font-weight: 400
+    letter-spacing: -0.6px
+
+  .primeiro-content .feat-headline a
+    font-size: 22px
+    line-height: 1.33em
+    letter-spacing: -0.6px
+
+  .recent-des
+    margin: 10px 0px 0px
+    color: #919191
+    font-size: 13.3px
+    line-height: 1.65
+    font-weight: 400
+
+.feat1
+  padding-bottom: 20px
+
+  .primeiro
+    width: 60%
+    float: left
+    margin-right: 3%
+
+    .feat-thumb
+      display: block
+
+  .primeiro-thumb
+    display: block
+
+  .primeiro-content
+    float: left
+    display: block
+
+  ul li
+    display: block
+    float: left
+    width: 37%
+    padding-bottom: 0
+    margin-bottom: 20px
+    padding-top: 0
+    height: auto
+
+    &:nth-of-type(2)
+      margin-bottom: 0
+
+.feat-headline a:hover
+  color: #f2132d
+
+.p-date:before, .p-author:before
+  margin-right: 5px
+
+.p-date
+  margin-left: 10px
+
+.feat1 .primeiro-content .feat-headline
+  padding: 10px 0
+
+.feat-layout
+  .widget-content, h2.title
+    display: none
+
+.label, .search-query
+  padding: 0 0 6px
+
+.label span, .search-query span
+  color: #CBCBCB
+  font-weight: 700
+  line-height: normal
+  font-size: 13px
+  text-transform: uppercase
+  display: inline-block
+
+.post
+  display: block
+  overflow: hidden
+  word-wrap: break-word
+
+.index .post, .archive .post
+  padding: 20px 0
+
+.index .post-outer:nth-of-type(1) .post
+  padding-top: 5px
+
+.block-image
+  float: left
+  width: 300px
+  height: 198px
+  margin-right: 30px
+
+  .thumb
+    width: 100%
+    height: 198px
+    position: relative
+    display: block
+    z-index: 2
+    overflow: hidden
+
+  a
+    width: 100%
+    height: 198px
+    display: block
+    transition: all 0.3s ease-out !important
+    -webkit-transition: all 0.3s ease-out !important
+    -moz-transition: all 0.3s ease-out !important
+    -o-transition: all 0.3s ease-out !important
+
+    &:hover
+      -webkit-transform: scale(1.1) !important
+      -moz-transform: scale(1.1) !important
+      transform: scale(1.1) !important
+      transition: all 0.3s ease-out !important
+      -webkit-transition: all 0.3s ease-out !important
+      -moz-transition: all 0.3s ease-out !important
+      -o-transition: all 0.3s ease-out !important
+
+.retitle h2
+  margin: 8px 0
+  display: block
+
+.post h2
+  a
+    color: #010101
+    font-weight: 700
+    text-decoration: none
+    font-size: 24px
+    line-height: 1.33em
+    letter-spacing: -0.6px
+
+    &:visited
+      color: #010101
+      font-weight: 700
+      text-decoration: none
+      font-size: 24px
+      line-height: 1.33em
+      letter-spacing: -0.6px
+
+  strong
+    color: #010101
+    font-weight: 700
+    text-decoration: none
+    font-size: 24px
+    line-height: 1.33em
+    letter-spacing: -0.6px
+
+  a:hover
+    color: #f2132d
+
+.post_author_date
+  color: #C4C4C4
+  font-size: 13px
+  font-weight: 400
+  line-height: 23px
+  margin: 0 0 25px
+  text-transform: uppercase
+
+.post_author
+  font-weight: 600
+  margin-right: 5px
+
+div.post_author_date a
+  text-decoration: none
+
+.resumo
+  margin-top: 10px
+  color: #919191
+  font-size: 13.3px
+  line-height: 1.65
+
+  span
+    display: block
+    margin-bottom: 8px
+
+.widget
+  iframe, img
+    max-width: 100%
+
+.index .post-footer, .archive .post-footer
+  display: none !important
+
+.index .post h2, .archive .post h2
+  margin: 0 0 10px
+  padding: 0
+
+.item .post, .static_page .post
+  padding: 0 0 25px
+
+.date-header
+  color: #bdbdbd
+  display: block
+  overflow: hidden
+  font-size: 12px
+  font-weight: 400
+  line-height: 1.3em
+  margin: 0 !important
+  padding: 0
+
+  a
+    color: #bdbdbd
+
+#meta-post .fa-clock-o
+  margin-left: 8px
+
+.post-meta
+  color: #bdbdbd
+  display: block
+  font-size: 13px
+  font-weight: 400
+  line-height: 21px
+  margin: 0
+  padding: 0
+
+.hreview
+  display: none !important
+
+.postags
+  position: absolute
+  top: 5px
+
+  a
+    padding: 5px
+    display: inline-block
+    background: #FFC000
+    margin: 0
+    color: #fff
+
+    &:nth-child(2)
+      background-color: #444
+
+    display: none
+
+    &:first-child, &:nth-child(2)
+      display: inline-block
+
+    &:hover
+      background: #aaa
+
+.breadcrumbs
+  .fa-angle-right:before
+    margin: 0 5px
+
+  margin: 0
+  font-size: 13px
+
+  span
+    a
+      &.bhome, &:hover
+        color: #f2132d
+
+      color: #010101
+
+    color: #010101
+
+.item
+  article
+    margin-top: 20px
+
+  .post-head
+    margin: 15px 0 5px
+    position: relative
+
+.static_page .post-head
+  margin: 15px 0 5px
+  position: relative
+
+.item .post-title, .static_page .post-title
+  color: #010101
+  display: inline-block
+  padding-bottom: 5px
+  font-size: 31px
+  line-height: 1.33
+  font-weight: 700
+  position: relative
+
+.item .post-body, .static_page .post-body
+  width: 100%
+  color: #5E5E5E
+  font-size: 15px
+  line-height: 1.5em
+  overflow: hidden
+
+.item
+  .post-outer
+    padding: 0
+
+  .post-body img
+    max-width: 100%
+
+.post-meta
+  a, i
+    color: #CBCBCB
+
+.post-timestamp
+  margin-left: 5px
+
+.label-head
+  margin-left: 5px
+
+  a
+    padding-left: 2px
+
+    &:hover
+      color: #f2132d
+
+.main
+  .widget
+    margin: 0
+
+  .Blog
+    border-bottom-width: 0
+
+#ads-post10
+  display: none
+
+.ads-post .widget
+  width: 728px
+  max-height: 90px
+  margin: 0 auto 25px
+
+.share-box
+  margin: 20px 0 25px
+  border-bottom: 2px solid #EEE
+  position: relative
+  padding-bottom: 20px
+
+.share-title
+  color: #010101
+  display: inline-block
+  padding-bottom: 10px
+  font-size: 13px
+  font-weight: 700
+  position: relative
+  top: 5px
+  text-transform: uppercase
+
+.share-art
+  float: right
+  padding: 0
+  padding-top: 0
+  font-size: 13px
+  font-weight: 400
+  text-transform: capitalize
+
+  a
+    color: #fff
+    padding: 3px 8px
+    margin-left: 4px
+    border-radius: 2px
+    display: inline-block
+    margin-right: 0
+
+    &:hover
+      color: #fff
+
+  .fac-art
+    background: #3b5998
+
+    &:hover
+      background: rgba(49, 77, 145, 0.7)
+
+  .twi-art
+    background: #00acee
+
+    &:hover
+      background: rgba(7, 190, 237, 0.7)
+
+  .goo-art
+    background: #db4a39
+
+    &:hover
+      background: rgba(221, 75, 56, 0.7)
+
+  .pin-art
+    background: #CA2127
+
+    &:hover
+      background: rgba(202, 33, 39, 0.7)
+
+  .lin-art
+    background: #0077B5
+
+    &:hover
+      background: rgba(0, 119, 181, 0.7)
+
+#related-posts
+  margin-bottom: 10px
+
+.related li
+  width: 30.835%
+  display: inline-block
+  height: auto
+  min-height: 184px
+  float: left
+  margin-right: 24px
+  overflow: hidden
+  position: relative
+
+.related-thumb
+  width: 100%
+  height: 160px
+  overflow: hidden
+
+.related li .related-img
+  width: 100%
+  height: 160px
+  display: block
+  transition: all 0.3s ease-out !important
+  -webkit-transition: all 0.3s ease-out !important
+  -moz-transition: all 0.3s ease-out !important
+  -o-transition: all 0.3s ease-out !important
+
+  &:hover
+    -webkit-transform: scale(1.1) !important
+    -moz-transform: scale(1.1) !important
+    transform: scale(1.1) !important
+    transition: all 0.3s ease-out !important
+    -webkit-transition: all 0.3s ease-out !important
+    -moz-transition: all 0.3s ease-out !important
+    -o-transition: all 0.3s ease-out !important
+
+.related-title a
+  font-size: 14px
+  line-height: 1.33em
+  padding: 10px 5px 10px 0
+  font-weight: 400
+  color: #010101
+  display: block
+
+  &:hover
+    color: #f2132d
+
+.related li
+  &:nth-of-type(3), &:nth-of-type(6), &:nth-of-type(9)
+    margin-right: 0
+
+.static_page
+  .post-meta, .old_new
+    display: none
+
+.error_page #main-wrapper
+  width: 100% !important
+  margin: 0 !important
+
+#errr
+  margin: 60px auto
+  text-align: center
+  padding: 0
+  line-height: 4em
+
+.error_page a.homepage
+  padding: 10px 20px
+  color: #fff
+  background-color: #010101
+  border-radius: 2px
+
+  &:hover
+    background-color: #f2132d
+
+#errr
+  .error
+    font-size: 20px
+    text-align: center
+    font-weight: 700
+
+  .nerrr
+    font-size: 150px
+    text-align: center
+    color: #f2132d
+    font-weight: 700
+
+    span.fa
+      font-size: 135px
+      margin: 0 10px
+      color: #010101
+      font-weight: 700
+
+  .fa-frown-o:before
+//    content: & quot
+
+.error_page
+  .sidebar-wrapper, .old_new
+    display: none
+
+@media only screen and (max-width: 768px)
+  #errr
+    margin: 50px auto 50px
+
+    p
+      line-height: 2.5em
+
+@media only screen and (max-width: 359px)
+  #errr .nerrr
+    font-size: 100px
+
+    span.fa
+      font-size: 75px
+
+@media only screen and (max-width: 319px)
+  #errr
+    .nerrr
+      font-size: 80px
+
+    span.fa.fa-frown-o
+      font-size: 65px
+
+    p
+      line-height: 2.5em
+
+.widget-title
+  position: relative
+  z-index: 1
+  margin-bottom: 20px
+  line-height: 33px
+
+.firstcharacter
+  float: left
+  color: #f2132d
+  font-size: 75px
+  line-height: 60px
+  padding-top: 4px
+  padding-right: 8px
+  padding-left: 3px
+
+.post-body
+  h1, h2, h3, h4, h5, h6
+    margin-bottom: 15px
+    color: #010101
+
+blockquote
+  font-style: italic
+  color: #999
+  border-left: 5px solid #f2132d
+  margin-left: 0
+  padding: 10px 15px
+
+  &:before
+    content: '\f10d'
+    display: inline-block
+    font-family: FontAwesome
+    font-style: normal
+    font-weight: 400
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    margin-right: 10px
+    color: #999
+
+  &:after
+    content: '\f10e'
+    display: inline-block
+    font-family: FontAwesome
+    font-style: normal
+    font-weight: 400
+    line-height: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    margin-left: 10px
+    color: #999
+
+.widget .post-body
+  ul, ol
+    line-height: 1.5
+    font-weight: 400
+
+  li
+    margin: 5px 0
+    padding: 0
+    line-height: 1.5
+
+.post-body ul li:before
+  content: "\f105"
+  margin-right: 5px
+  font-family: fontawesome
+
+.blogger-tab
+  display: block
+
+.comments
+  clear: both
+  margin-top: 0
+  margin-bottom: 0
+  color: #010101
+
+  h4
+    font-size: 13px
+    text-transform: capitalize
+    font-weight: 400
+    padding: 10px 0
+    margin: 0
+    border-bottom: 1px solid #eee
+
+  .comments-content
+    padding: 10px 0
+
+    .comment
+      margin-bottom: 0
+      padding-bottom: 8px
+
+      &:first-child
+        padding-top: 0
+
+.cmm-tabs .content-tab
+  background-color: transparent
+  padding: 0
+
+.cmm-tabs-header
+  background: #010101
+  height: 32px
+  margin-bottom: 0px
+  position: relative
+
+  h3
+    display: inline-block
+    margin: 0
+    color: #E4E4E4
+    font-weight: 700
+    text-transform: uppercase
+    font-size: 13px
+    height: 32px
+    line-height: 32px
+    padding-left: 10px
+
+    h9
+      display: none
+
+.simplyTab .cmm-tabs-header .wrap-tab
+  float: right
+
+.cmm-tabs-header .wrap-tab
+  a
+    height: auto
+    line-height: 32px
+    padding: 0px 10px
+    font-size: 14px
+    display: inline-block
+
+  li
+    float: left
+    width: auto
+
+.facebook-tab, .fb_iframe_widget_fluid span, .fb_iframe_widget iframe
+  width: 100% !important
+
+.comments
+  .item-control
+    position: static
+
+  .avatar-image-container
+    float: left
+    height: 35px
+    max-height: 35px
+    width: 35px
+    max-width: 35px
+    border-radius: 2px
+
+    img
+      height: 35px
+      max-height: 35px
+      width: 35px
+      max-width: 35px
+      border-radius: 2px
+
+  .comment-block
+    padding: 10px
+    box-shadow: none
+    border: 1px solid #eee
+    border-radius: 2px
+    margin-left: 47px
+    margin-top: 0
+
+  .comments-content
+    .comment-replies
+      margin-left: 47px
+      margin-top: 0
+
+    .inline-thread
+      padding: 0
+
+    .comment-header
+      font-size: 14px
+      border-bottom: 1px solid #eee
+      padding: 0 0 3px
+
+    .user
+      font-style: normal
+      font-weight: 400
+
+    .icon.blog-author
+      font-weight: 400
+
+    .comment-content
+      text-align: justify
+      font-size: 14px
+      line-height: 1.4em
+
+  .comment .comment-actions a
+    margin-right: 5px
+    padding: 2px 5px
+    color: #010101
+    font-weight: 400
+    background-color: #f0f0f0
+    font-size: 10px
+    letter-spacing: 1px
+
+    &:hover
+      color: #f2132d
+      text-decoration: none
+
+  .comments-content
+    .datetime
+      margin-left: 0
+      float: right
+      font-size: 11px
+
+    .comment-header a
+      color: inherit
+
+      &:hover
+        color: #f2132d
+
+    .icon.blog-author:before
+      content: "\f007"
+      font-size: 12px
+      font-family: FontAwesome
+
+  .thread-toggle
+    margin-bottom: 4px
+
+  .comments-content .comment-thread
+    margin: 4px 0
+
+  .continue a
+    padding: 0
+    padding-top: 10px
+    padding-left: 47px
+    font-weight: 500
+
+  .comments-content .loadmore.loaded
+    margin: 0
+    padding: 0
+
+  .comment-replybox-thread
+    margin: 0
+
+iframe
+  &.blogger-iframe-colorize, &.blogger-comment-from-post
+    height: 243px !important
+
+.cmm-tabs.simplyTab
+  .content-tab
+    background-color: transparent
+    padding: 0
+    margin-top: 0
+
+  .wrap-tab li a
+    text-transform: uppercase
+    color: #E4E4E4
+    font-weight: 400
+    background-color: #171717
+    height: 32px
+    font-size: 10px
+    letter-spacing: 1px
+
+    &.activeTab
+      background-color: #f2132d
+      color: #fff
+
+.posts-title h2 a:before
+  margin-right: 10px
+
+.cmm-tabs.simplyTab .wrap-tab
+  float: right
+
+  li
+    padding: 0
+    line-height: 0
+    margin-left: 0
+
+.wrap-tab
+  list-style: none
+
+.content-tab
+  transition: all 0 ease
+  -webkit-transition: all 0 ease
+  -moz-transition: all 0 ease
+  -o-transition: all 0 ease
+
+#blog-pager
+  clear: both
+  text-align: center
+  margin: 0
+
+.index
+  .blog-pager, #blog-pager
+    display: block
+
+  .blog-pager, #blog-pager
+    padding: 10px 0 25px
+    text-align: left
+
+.archive
+  .blog-pager, #blog-pager
+    padding: 10px 0 25px
+    text-align: left
+
+#blog-pager-newer-link a, #blog-pager-older-link a
+  display: block
+  float: left
+  margin-right: 6px
+  padding: 0 13px
+  border: 1px solid #010101
+  text-transform: uppercase
+  line-height: 32px
+  font-weight: 700
+  color: #010101
+
+#blog-pager-newer-link a:hover, #blog-pager-older-link a:hover
+  background-color: #010101
+  color: #fff !important
+
+.showpageNum a, .showpage a, .showpagePoint
+  display: block
+  float: left
+  margin-right: 6px
+  padding: 0 12px
+  border: 1px solid #010101
+  text-transform: uppercase
+  line-height: 32px
+  font-weight: 700
+  color: #010101
+
+.showpageNum a:hover, .showpage a:hover
+  background-color: #010101
+  color: #fff !important
+
+.showpageNum a i, .showpage a i
+  transition: all .0s ease
+  -webkit-transition: all .0s ease
+  -moz-transition: all .0s ease
+  -o-transition: all .0s ease
+
+.showpagePoint
+  background-color: #010101
+  color: #FFF
+
+.showpageOf
+  display: none !important
+
+.feed-links
+  clear: both
+  display: none
+  line-height: 2.5em
+
+.sidebar-wrapper
+  float: right
+  overflow: hidden
+  width: 320px
+  padding-top: 0
+  padding-bottom: 20px
+  word-wrap: break-word
+  color: #666
+  line-height: 1.5em
+
+  .widget
+    padding: 0
+    background: #FFF
+    margin-bottom: 20px
+    overflow: hidden
+
+.sidebar h2
+  color: #222222
+  display: inline-block
+  position: relative
+  z-index: 1
+  margin: 0
+  padding-right: 15px
+  font-size: 18px
+  letter-spacing: -0.4px
+  text-transform: uppercase
+  font-weight: bold
+  background-color: #fff
+
+.sidebar-wrapper .widget-title:after
+  position: absolute
+  z-index: 0
+  top: 13px
+  left: 0
+  width: 100%
+  height: 5px
+  background-color: rgb(245, 245, 245)
+  content: " "
+
+.sidebar
+  ul
+    list-style: none
+
+  li
+    margin: 0
+    padding-bottom: .25em
+    padding-right: 0
+    padding-top: 0
+
+  .widget-content
+    margin: 0
+
+.list-label-widget-content li
+  display: block
+  padding: 8px 0
+  border-bottom: 1px solid #f3f3f3
+  position: relative
+
+  a
+    &:before
+      content: '\203a'
+      position: absolute
+      left: 0px
+      top: 2px
+      font-size: 22px
+      color: #010101
+
+    color: #010101
+    font-size: 12px
+    padding-left: 20px
+    font-weight: 400
+    text-transform: uppercase
+
+    &:hover
+      color: #f2132d
+
+  span:last-child
+    color: #dbdbdb
+    font-size: 12px
+    font-weight: 700
+    position: absolute
+    top: 9px
+    right: 0
+
+.cloud-label-widget-content
+  margin-top: 10px
+
+  span
+    a
+      font-size: 13px
+      color: #999
+      background-color: #f4f4f4
+      padding: 7px 14px
+      float: left
+      position: relative
+      display: inline-block
+      margin: 0 5px 5px 0
+      text-transform: capitalize
+
+      &:hover
+        color: #fff
+        background-color: #f2132d
+
+    span
+      font-size: 13px
+      color: #757575
+      background-color: #f9f9f9
+      padding: 7px 14px
+      float: left
+      position: relative
+      display: inline-block
+      margin: 0 5px 5px 0
+      text-transform: capitalize
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      border-radius: 3px
+
+.label-size-1, .label-size-2
+  opacity: 100
+
+.FollowByEmail
+  td
+    width: 100%
+    float: left
+
+  .follow-by-email-inner
+    .follow-by-email-submit
+      margin-left: 0
+      width: 100%
+      border-radius: 0
+      height: 30px
+      font-size: 11px
+      font-family: inherit
+      color: #fff
+      background-color: #f2132d
+      text-transform: uppercase
+      letter-spacing: 1px
+
+      &:hover
+        background-color: #333
+        color: #FFF
+
+    .follow-by-email-address
+      padding-left: 10px
+      height: 35px
+      border: 1px solid #EEE
+      margin-bottom: 5px
+      font: normal normal 13px Montserrat, sans-serif
+      font-size: 12px
+      box-sizing: border-box
+
+      &:focus
+        border: 1px solid #EEE
+
+  .widget-content:before
+    content: "Enter your email address to subscribe to this blog and receive notifications of new posts by email."
+    font-size: 12px
+    color: #666
+    line-height: 1.4em
+    margin-bottom: 5px
+    display: block
+
+.flickr_widget .flickr_badge_image
+  float: left
+  margin-bottom: 5px
+  margin-right: 10px
+  overflow: hidden
+  display: inline-block
+
+  &:nth-of-type(4), &:nth-of-type(8), &:nth-of-type(12)
+    margin-right: 0
+
+  img
+    max-width: 67px
+    height: auto
+
+    &:hover
+      opacity: .5
+
+#ArchiveList select
+  border: 1px solid #EEE
+  border-radius: 2px
+  padding: 8px
+  width: 100%
+  cursor: pointer
+  font: normal normal 13px Montserrat, sans-serif
+
+.PopularPosts
+  .item-thumbnail
+    margin: 0 10px 0 0 !important
+    width: 80px
+    height: 60px
+    float: left
+    overflow: hidden
+
+  ul li img
+    padding: 0
+    width: 80px
+    height: 60px
+    transition: all 0.3s ease-out !important
+    -webkit-transition: all 0.3s ease-out !important
+    -moz-transition: all 0.3s ease-out !important
+    -o-transition: all 0.3s ease-out !important
+
+    &:hover
+      -webkit-transform: scale(1.1) !important
+      -moz-transform: scale(1.1) !important
+      transform: scale(1.1) !important
+      transition: all 0.3s ease-out !important
+      -webkit-transition: all 0.3s ease-out !important
+      -moz-transition: all 0.3s ease-out !important
+      -o-transition: all 0.3s ease-out !important
+
+  .widget-content ul li
+    overflow: hidden
+    border-top: 1px solid #EEE
+    padding: 10px 0
+
+.sidebar
+  .PopularPosts .widget-content ul li:first-child, .roma-widget li:first-child
+    padding-top: 0
+    border-top: 0
+
+.PopularPosts
+  ul li a
+    color: #010101
+    font-weight: 400
+    font-size: 14px
+    line-height: 1.4em
+
+    &:hover
+      color: #f2132d
+
+  .item-title
+    margin: 0
+    padding: 0
+
+    .popular_span
+      color: #C4C4C4
+      font-size: 13px
+      font-style: normal
+      line-height: 21px
+      margin-top: 3px
+
+.sidebar .roma-widget li
+  overflow: hidden
+  padding: 10px 0
+
+.roma-widget
+  .wid-thumb
+    width: 134px
+    height: 89px
+    float: left
+    margin-right: 15px
+    overflow: hidden
+
+  .mag-thumb
+    display: block
+    width: 134px
+    height: 89px
+    transition: all 0.3s ease-out !important
+    -webkit-transition: all 0.3s ease-out !important
+    -moz-transition: all 0.3s ease-out !important
+    -o-transition: all 0.3s ease-out !important
+
+    &:hover
+      -webkit-transform: scale(1.1) !important
+      -moz-transform: scale(1.1) !important
+      transform: scale(1.1) !important
+      transition: all 0.3s ease-out !important
+      -webkit-transition: all 0.3s ease-out !important
+      -moz-transition: all 0.3s ease-out !important
+      -o-transition: all 0.3s ease-out !important
+
+  .wrp-titulo
+    font: normal normal 15px
+    margin: 0 0 5px
+    overflow: hidden
+
+    a
+      color: #010101
+      font-weight: 400
+      font-size: 14px
+      line-height: 1.4em
+
+      &:hover
+        color: #f2132d
+
+.post-nav li
+  padding: 0
+  display: inline-block
+  width: 50%
+
+  strong
+    display: block
+    padding: 0 0 5px
+    font-weight: 700
+    letter-spacing: 1px
+    text-transform: uppercase
+    font-size: 13px
+
+    i
+      transition: all .0s ease
+      -webkit-transition: all .0s ease
+      -moz-transition: all .0s ease
+      -o-transition: all .0s ease
+
+ul.post-nav
+  background-color: #FFF
+  border-bottom: 2px solid #EEE
+  border-top: 2px solid #EEE
+  display: block
+  width: 100%
+  overflow: hidden
+
+.post-nav li
+  a
+    color: #010101
+    line-height: 1.33
+    display: block
+    padding: 15px 0
+    transition: all .0s ease
+    -webkit-transition: all .0s ease
+    -moz-transition: all .0s ease
+    -o-transition: all .0s ease
+
+  &:hover a
+    color: #f2132d
+
+ul.post-nav span
+  font-weight: 400
+
+.post-nav
+  .previous
+    float: left
+    min-height: 80px
+    border-right: 2px solid #EEE
+    box-sizing: border-box
+    padding-right: 10px
+
+  .next
+    text-align: right
+
+h2
+  margin: 0
+
+#footer-wrapper
+  background-color: #010101
+
+#footer
+  display: block
+  overflow: hidden
+  width: 100%
+
+.footer-sections
+  overflow: hidden
+  margin: 0 auto
+  padding: 45px 0 35px
+
+.sect-left
+  display: inline-block
+  float: left
+  width: 31.655%
+  margin-right: 25px
+
+  &:nth-child(3)
+    margin-right: 0
+
+  .widget-title
+    position: relative
+    z-index: 1
+    margin-bottom: 25px
+    line-height: 33px
+
+  h2
+    display: inline-block
+    position: relative
+    z-index: 1
+    margin: 0
+    padding-right: 15px
+    font-size: 18px
+    letter-spacing: -0.4px
+    text-transform: uppercase
+    font-weight: bold
+    background-color: #010101
+    color: #fff
+
+  .widget-title:after
+    position: absolute
+    z-index: 0
+    top: 13px
+    left: 0
+    width: 100%
+    height: 5px
+    background-color: rgba(100, 100, 100, 0.35)
+    content: " "
+
+  h2 a
+    color: #E4E4E4
+
+  .PopularPosts
+    ul li a
+      color: #E4E4E4
+
+    .widget-content ul li
+      border-top: 1px solid #171717
+
+      &:first-child
+        padding-top: 0
+        border-top: 0
+
+.footer-column .roma-widget li
+  overflow: hidden
+  border-bottom: 1px solid #eee
+  padding: 10px 0
+
+.sect-left
+  .roma-widget
+    .wrp-titulo a
+      color: #E4E4E4
+
+    li
+      overflow: hidden
+      border-top: 1px solid #171717
+      padding: 10px 0
+
+  .PopularPosts .widget-content ul li:first-child
+    padding-top: 0
+    border-top: 0
+
+  .roma-widget
+    li:first-child
+      padding-top: 0
+      border-top: 0
+
+    .wrp-titulo a:hover
+      color: #f2132d
+
+  .PopularPosts ul li a:hover
+    color: #f2132d
+
+.footer-wrapper
+  background-color: rgba(0, 0, 0, 0.24)
+  color: #E4E4E4
+  display: block
+  padding: 15px 0 13px
+  width: 100%
+  border-top: 1px solid #171717
+  overflow: hidden
+
+  .footer-sec
+    margin: 0 auto
+
+  .copyright
+    font-size: 12px
+
+    a
+      color: #fff
+
+      &:hover
+        color: #f2132d
+
+  #social-footer
+    float: right
+    position: relative
+    display: block
+    margin-right: -12px
+
+    ul
+      overflow: hidden
+
+      li
+        display: block
+        float: left
+        margin-right: 10px
+        margin-left: 10px
+
+        a
+          display: block
+          float: left
+          text-decoration: none
+          color: #E4E4E4
+
+          &:hover
+            color: #f2132d
+
+          &:before
+            display: inline-block
+            font-family: FontAwesome
+            font-style: normal
+            font-weight: 400
+            -webkit-font-smoothing: antialiased
+            -moz-osx-font-smoothing: grayscale
+
+  a:active, #social-footer ul li a:active
+    color: #f2132d
+
+#social-footer
+  .facebook:before
+    content: "\f230"
+
+  .twitter:before
+    content: "\f099"
+
+  .gplus:before
+    content: "\f0d5"
+
+  .rss:before
+    content: "\f09e"
+
+  .youtube:before
+    content: "\f167"
+
+  .skype:before
+    content: "\f17e"
+
+  .stumbleupon:before
+    content: "\f1a4"
+
+  .tumblr:before
+    content: "\f173"
+
+  .vine:before
+    content: "\f1ca"
+
+  .stack-overflow:before
+    content: "\f16c"
+
+  .linkedin:before
+    content: "\f0e1"
+
+  .dribbble:before
+    content: "\f17d"
+
+  .soundcloud:before
+    content: "\f1be"
+
+  .behance:before
+    content: "\f1b4"
+
+  .digg:before
+    content: "\f1a6"
+
+  .instagram:before
+    content: "\f16d"
+
+  .pinterest:before
+    content: "\f0d2"
+
+  .delicious:before
+    content: "\f1a5"
+
+  .codepen:before
+    content: "\f1cb"
+
+.sect-left
+  .FollowByEmail
+    .widget-content:before
+      color: #ddd
+      margin-top: 5px
+
+    .follow-by-email-inner .follow-by-email-submit
+      background-color: rgba(255, 255, 255, 0.1)
+
+      &:hover
+        background-color: #f2132d
+
+  .widget:nth-of-type(2) .widget-title
+    margin-top: 10px
+
+  #ArchiveList select
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    background: rgba(255, 255, 255, 0.1)
+    color: #ddd
+
+    option
+      color: #010101
+
+  .cloud-label-widget-content span a
+    color: #ddd
+    background-color: rgba(255, 255, 255, 0.1)
+
+    &:hover
+      color: #fff
+      background-color: #f2132d
+
+#back-to-top
+  background-color: #010101
+  color: #fff
+  padding: 7px 10px
+  border-radius: 3px
+  font-size: 16px
+  line-height: 1
+  text-align: center
+  transition: all .0s ease
+  -webkit-transition: all .0s ease
+  -moz-transition: all .0s ease
+  -o-transition: all .0s ease
+
+  &:hover
+    background-color: #f2132d
+    transition: all .3s ease
+    -webkit-transition: all .3s ease
+    -moz-transition: all .3s ease
+    -o-transition: all .3s ease
+
+.back-to-top
+  position: fixed !important
+  position: absolute
+  bottom: 70px
+  right: 50px
+  z-index: 9999
