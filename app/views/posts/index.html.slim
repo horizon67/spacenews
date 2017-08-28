@@ -125,12 +125,12 @@ body.index
           #main.main.section[name="Main Wrapper"]
             #Blog1.widget.Blog[data-version="1"]
               .blog-posts.hfeed
-                - Post.all.each do |post|
+                - @posts.each do |post|
                   .post-outer
                     .post
                       .block-image
                         .thumb
-                          = link_to post.source_url do
+                          = link_to post_path(post) do
                             = image_tag("#{(1..8).to_a.sample}.jpg")
                       .post-header
 
@@ -138,8 +138,7 @@ body.index
                         font.retitle
 
                         h2.post-title.entry-title
-                          = link_to post.source_url
-                            = post.title
+                          = link_to post.title, post_path(post)
                         .date-header
                           #meta-post
                             i.fa.fa-user
@@ -173,24 +172,7 @@ body.index
 
               #blog-pager.blog-pager
                 #blog-pager.blog-pager
-                  span.showpageOf
-                    | Page 2 of 3
-                  span.showpage
-                    a[href="/"]
-                      i.fa.fa-angle-left
-                      |  Prev
-                  span.showpageNum
-                    a[href="/"]
-                      | 1
-                  span.showpagePoint
-                    | 2
-                  span.showpageNum
-                    a[href="#" onclick="redirectpage(3);return false"]
-                      | 3
-                  span.showpageNum
-                    a[href="#" onclick="redirectpage(3);return false"]
-                      | Next 
-                      i.fa.fa-angle-right
+                  = paginate @posts
                 a.home-link[href="https://everyday-themexpose.blogspot.jp/"]
                   | Home
               .clear
@@ -207,179 +189,7 @@ body.index
 
           #ads-post10
             #ads-post-468.no-items.section[name="ADS Inner Footer 728x90"]
-
-        .sidebar-wrapper
-          #sidebar.sidebar.section[name="Sidebar Right"]
-            #HTML2.widget.HTML[data-version="1"]
-              #HTML2.widget.HTML[data-version="1"]
-                .widget-title
-                  h2.title
-                    | Recent Posts
-                .widget-content
-                  ul.roma-widget
-                    li
-                      .wid-thumb
-                        a.mag-thumb[href="http://everyday-themexpose.blogspot.com/2016/08/apples-new-ipad-lets-you-play-latest.html" style="background:url(https://4.bp.blogspot.com/-SXkiMit8exs/WXRwbuTnOEI/AAAAAAAAJ8o/A9JeQBJsLz0Jv_yNXhWAZMfEUI6ytYQjACLcBGAs/s1600/1201-768x506.jpg) no-repeat center center;background-size: cover"]
-                      .p-head
-                        h3.wrp-titulo
-                          a[href="http://everyday-themexpose.blogspot.com/2016/08/apples-new-ipad-lets-you-play-latest.html"]
-                            | Exquisite Admitting Cordially September Newspaper
-                    li
-                      .wid-thumb
-                        a.mag-thumb[href="http://everyday-themexpose.blogspot.com/2016/07/the-best-smartphones-you-can-purchase.html" style="background:url(https://3.bp.blogspot.com/-zbLKH2-dOhI/WXRxg4EywWI/AAAAAAAAJ9A/L4Aul2Shy1oIMKEIcMhHIGbsa5qUMlNDwCLcBGAs/s1600/1181-1152x759.jpg) no-repeat center center;background-size: cover"]
-                      .p-head
-                        h3.wrp-titulo
-                          a[href="http://everyday-themexpose.blogspot.com/2016/07/the-best-smartphones-you-can-purchase.html"]
-                            | Melancholy Middletons Yet Understood Decisively
-                    li
-                      .wid-thumb
-                        a.mag-thumb[href="http://everyday-themexpose.blogspot.com/2016/06/vlc-player-hits-apple-tv-so-you-can.html" style="background:url(https://3.bp.blogspot.com/-lF_jMTj7RaQ/WXRxgFL3rCI/AAAAAAAAJ84/TTYBhEV4Bcoke_LGEsqGCm_iu4TqUaK1ACEwYBhgL/s1600/115-768x506.jpg) no-repeat center center;background-size: cover"]
-                      .p-head
-                        h3.wrp-titulo
-                          a[href="http://everyday-themexpose.blogspot.com/2016/06/vlc-player-hits-apple-tv-so-you-can.html"]
-                            | Raptures Returned Disposed One Entirely Her Delivered
-                    li
-                      .wid-thumb
-                        a.mag-thumb[href="http://everyday-themexpose.blogspot.com/2015/03/how-to-use-your-smartphone-battery-last.html" style="background:url(https://1.bp.blogspot.com/-m_kYk42VdZw/WXRxh9y3d2I/AAAAAAAAJ9M/9RI-c-N9V9Eb75LhWYxa97OTHTQICrjoQCEwYBhgL/s1600/8-768x506.jpg) no-repeat center center;background-size: cover"]
-                      .p-head
-                        h3.wrp-titulo
-                          a[href="http://everyday-themexpose.blogspot.com/2015/03/how-to-use-your-smartphone-battery-last.html"]
-                            | Confined So Graceful Building Opinions Whatever Trifling
-                  .clear
-                .clear
-                span.widget-item-control
-                  span.item-control.blog-admin
-                    = link_to '#', class: "quickedit" do
-                      img[alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18"]
-                .clear
-            #BlogArchive1.widget.BlogArchive[data-version="1"]
-              h2
-                | Blog Archive
-              .widget-content
-                #ArchiveList
-                  #BlogArchive1_ArchiveList
-                    select#BlogArchive1_ArchiveMenu
-                      option[value=""]
-                        | Blog Archive
-                      option[value="https://everyday-themexpose.blogspot.jp/2016/08/"]
-                        | August 2016 (1)
-                      option[value="https://everyday-themexpose.blogspot.jp/2016/07/"]
-                        | July 2016 (1)
-                      option[value="https://everyday-themexpose.blogspot.jp/2016/06/"]
-                        | June 2016 (1)
-                      option[value="https://everyday-themexpose.blogspot.jp/2015/03/"]
-                        | March 2015 (2)
-                      option[value="https://everyday-themexpose.blogspot.jp/2015/02/"]
-                        | February 2015 (1)
-                      option[value="https://everyday-themexpose.blogspot.jp/2015/01/"]
-                        | January 2015 (1)
-                      option[value="https://everyday-themexpose.blogspot.jp/2014/08/"]
-                        | August 2014 (4)
-                      option[value="https://everyday-themexpose.blogspot.jp/2014/07/"]
-                        | July 2014 (1)
-                      option[value="https://everyday-themexpose.blogspot.jp/2014/02/"]
-                        | February 2014 (2)
-                      option[value="https://everyday-themexpose.blogspot.jp/2013/08/"]
-                        | August 2013 (2)
-                .clear
-                span.widget-item-control
-                  span.item-control.blog-admin
-                    = link_to '#', class: "quickedit" do
-                      img[alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18"]
-                .clear
-            #HTML9.widget.HTML[data-version="1"]
-              h2.title
-                | Ads
-              .widget-content
-                img[src="https://lh6.googleusercontent.com/proxy/SwiyXuPahoLxRJxTaCikQAT9rEWj0w7LQTkT8QVrXnGfkeSfn1hYyqIbs2PvsG-8-n3avDl3JlqJfAH_ET6VPCR4_Q9PsGsOdqboaUH7Hd3PArKsbreBrtJZoyLhU0LCHibmFA=s0-d"]
-              .clear
-              span.widget-item-control
-                span.item-control.blog-admin
-                  = link_to '#', class: "quickedit" do
-                    img[alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18"]
-              .clear
-            #PopularPosts2.widget.PopularPosts[data-version="1"]
-              h2
-                | Popular Posts
-              .widget-content.popular-posts
-                ul
-                  li
-                    .item-thumbnail-only
-                      .item-thumbnail
-                        a[href="https://everyday-themexpose.blogspot.jp/2016/08/apples-new-ipad-lets-you-play-latest.html" target="_blank"]
-                          img[alt="Exquisite Admitting Cordially September Newspaper" border="0" height="72" src="https://4.bp.blogspot.com/-SXkiMit8exs/WXRwbuTnOEI/AAAAAAAAJ8o/A9JeQBJsLz0Jv_yNXhWAZMfEUI6ytYQjACLcBGAs/s72-c/1201-768x506.jpg" width="72"]
-                      .item-title
-                        a[href="https://everyday-themexpose.blogspot.jp/2016/08/apples-new-ipad-lets-you-play-latest.html"]
-                          | Exquisite Admitting Cordially September Newspaper
-                    div[style="clear: both;"]
-                  li
-                    .item-thumbnail-only
-                      .item-thumbnail
-                        a[href="https://everyday-themexpose.blogspot.jp/2016/07/the-best-smartphones-you-can-purchase.html" target="_blank"]
-                          img[alt="Melancholy Middletons Yet Understood Decisively" border="0" height="72" src="https://3.bp.blogspot.com/-zbLKH2-dOhI/WXRxg4EywWI/AAAAAAAAJ9A/L4Aul2Shy1oIMKEIcMhHIGbsa5qUMlNDwCLcBGAs/s72-c/1181-1152x759.jpg" width="72"]
-                      .item-title
-                        a[href="https://everyday-themexpose.blogspot.jp/2016/07/the-best-smartphones-you-can-purchase.html"]
-                          | Melancholy Middletons Yet Understood Decisively
-                    div[style="clear: both;"]
-                  li
-                    .item-thumbnail-only
-                      .item-thumbnail
-                        a[href="https://everyday-themexpose.blogspot.jp/2014/08/even-celebrities-wanted-to-dress-rather.html" target="_blank"]
-                          img[alt="Blessing Resolved Peculiar Fat Graceful Ham " border="0" height="72" src="https://3.bp.blogspot.com/-WGIRRXD4gZ8/WXRzW-XdCkI/AAAAAAAAJ9c/xxgsu_ax6S8pzu47vPkXE0uioFkCw6q-wCLcBGAs/s72-c/76-1152x759.jpg" width="72"]
-                      .item-title
-                        a[href="https://everyday-themexpose.blogspot.jp/2014/08/even-celebrities-wanted-to-dress-rather.html"]
-                          | Blessing Resolved Peculiar Fat Graceful Ham 
-                    div[style="clear: both;"]
-                .clear
-                span.widget-item-control
-                  span.item-control.blog-admin
-                    = link_to '#', class: "quickedit" do
-                      img[alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18"]
-                .clear
-            #Label1.widget.Label[data-version="1"]
-              h2
-                | Categories
-              .widget-content.cloud-label-widget-content
-                span.label-size.label-size-5
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/Break"]
-                    | Break
-                span.label-size.label-size-4
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/Featured"]
-                    | Featured
-                span.label-size.label-size-1
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/Food"]
-                    | Food
-                span.label-size.label-size-1
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/ipad"]
-                    | ipad
-                span.label-size.label-size-3
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/Mobile"]
-                    | Mobile
-                span.label-size.label-size-3
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/News"]
-                    | News
-                span.label-size.label-size-1
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/Slider"]
-                    | Slider
-                span.label-size.label-size-4
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/Sport"]
-                    | Sport
-                span.label-size.label-size-1
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/Technology"]
-                    | Technology
-                span.label-size.label-size-3
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/Video"]
-                    | Video
-                span.label-size.label-size-1
-                  a[dir="ltr" href="https://everyday-themexpose.blogspot.jp/search/label/Watch"]
-                    | Watch
-                .clear
-                span.widget-item-control
-                  span.item-control.blog-admin
-                    = link_to '#', class: "quickedit" do
-                      img[alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18"]
-                .clear
-        .clear
+        = render partial: "sidebar"
       .clear
       div[style="display: none"]
         #unwanted.unwanted.section

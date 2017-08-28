@@ -12,6 +12,10 @@ gem 'autoprefixer-rails', '~> 7.1.2.6'
 gem 'mysql2', '0.4.9'
 gem "dotenv-rails", "~> 2.2.1"
 gem 'draper', "~> 3.0.0"
+gem 'kaminari', "~> 1.0.1"
+gem 'cells-rails', "~> 0.0.8"
+gem 'cells-slim', "~> 0.0.5"
+gem 'jquery-rails', "~> 4.3.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

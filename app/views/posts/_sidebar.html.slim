@@ -1,0 +1,40 @@
+.sidebar-wrapper
+  #sidebar.sidebar.section[name="Sidebar Right"]
+    = cell(:recent_post).(:index)
+    = cell(:popular_post).(:index)
+    #BlogArchive1.widget.BlogArchive[data-version="1"]
+      h2
+        | 記事アーカイブ
+      .widget-content
+        #ArchiveList
+          #BlogArchive1_ArchiveList
+            - month_a = (0..10).map{|i| [(Time.zone.now - i.month).strftime("%Y年%-m月"), (Time.zone.now - i.month).strftime("%Y-%m")]}
+            = select_tag 'post[published_month]',
+              options_for_select(month_a, :selected => params[:published_month]),
+              {id: "js__change__trigger", prompt: "記事アーカイブ"}
+        .clear
+        span.widget-item-control
+          span.item-control.blog-admin
+            = link_to '#', class: "quickedit" do
+              img[alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18"]
+        .clear
+    #HTML9.widget.HTML[data-version="1"]
+      h2.title
+        | Ads
+      .widget-content
+        img[src="https://lh6.googleusercontent.com/proxy/SwiyXuPahoLxRJxTaCikQAT9rEWj0w7LQTkT8QVrXnGfkeSfn1hYyqIbs2PvsG-8-n3avDl3JlqJfAH_ET6VPCR4_Q9PsGsOdqboaUH7Hd3PArKsbreBrtJZoyLhU0LCHibmFA=s0-d"]
+      .clear
+      span.widget-item-control
+        span.item-control.blog-admin
+          = link_to '#', class: "quickedit" do
+            img[alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18"]
+      .clear
+.clear
+
+javascript:
+  $(function(){
+    $('#js__change__trigger').change(function() {
+      var val = $(this).val();
+      window.location.href = "/posts/" + val;
+    });
+  });
