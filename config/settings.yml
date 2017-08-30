@@ -24,6 +24,15 @@ test:
 
 production:
   <<: *defaults
+  site:
+    name: 宇宙ニュース
+    page_title: ニュース記事一覧
+    page_description: 宇宙に関するニュース記事を一覧にしています。
+    page_keywords: 宇宙,ニュース,News,記事,まとめ
+    meta:
+      ogp:
+        type: article
+        image_path: https://xn--zck9awe6du60xdda.com/images/NASA7.jpg
   intro:
     posts:
       - id: 116
