@@ -6,6 +6,7 @@ gem 'rails', '5.1.3'
 
 gem "therubyracer", platforms: :ruby
 gem 'uglifier', '~> 3.2.0'
+gem 'coffee-rails', '~> 4.2.2'
 gem 'sass-rails', '~> 5.0.6'
 gem 'sass-globbing', '~> 1.1.5'
 gem 'slim-rails', '~> 3.1.2'
@@ -21,8 +22,10 @@ gem 'jquery-rails', '~> 4.3.1'
 gem 'meta-tags', '~> 2.6.0'
 gem 'settingslogic', '~> 2.0.9'
 gem 'unicorn', '~> 5.3.0'
-gem 'activeadmin', '~> 1.1.0'
+gem 'devise', '~> 4.3.0'
+#gem 'activeadmin', '~> 1.1.0'
 gem 'aws-sdk', '~> 3.0.0'
+#gem "rack-contrib", '~> 1.3.0', require: "rack/contrib"
 
 group :development, :test do
   # deploy
