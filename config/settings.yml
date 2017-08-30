@@ -24,3 +24,11 @@ test:
 
 production:
   <<: *defaults
+  intro:
+    posts:
+      - id: 116
+        image: "NASA7.jpg"
+      - id: 101
+        image: "NASA5-1.jpg"
+      - id: 110
+        image: "NASA10.jpg"
