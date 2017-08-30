@@ -7,13 +7,14 @@
             #Header1.widget.Header[data-version="1"]
               #header-inner
                 .titlewrapper
-                  h1.title
-                    | 宇宙ニュース
+                  = link_to '/' do
+                    h1.title
+                      | 宇宙ニュース
                 .descriptionwrapper
                   p.description
                     span
 
-        .header-ads
+        /.header-ads
           #ads-content.section[name="Ads 728x90"]
             #HTML1.widget.HTML[data-version="1"]
               .widget-content
@@ -51,17 +52,18 @@
                       .date-header
                         #meta-post
                           i.fa.fa-user
-                          a.g-profile[href="https://plus.google.com/117087522982435008929" rel="author" title="#{post.source_name}"]
+                          / TODO: リストページに飛ばす
+                          a.g-profile[href="" rel="author" title="#{post.source_name}"]
                             span[itemprop="name"]
                               = post.source_name
                           i.fa.fa-clock-o
-                          span.published.timeago[title="2016-08-01T04:22:00-07:00"]
-                            = post.published_at
+                          span.published.timeago[title="#{post.published_at.strftime('%Y年%_m月%e日')}"]
+                            = post.published_at.strftime("%Y年%_m月%e日")
                         .resumo
                           span
                             = post.content
                         div[style="clear: both;"]
-                    .hreview
+                    /.hreview
                       span.item
                         span.fn
                           | Exquisite Admitting Cordially September Newspaper

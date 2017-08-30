@@ -10,11 +10,11 @@ defaults: &defaults
         image_path: http://localhost:3000/images/NASA7.jpg
   intro:
     posts:
-      - id: 1
+      - id: 100
         image: "NASA7.jpg"
-      - id: 2
+      - id: 101
         image: "NASA5-1.jpg"
-      - id: 3
+      - id: 102
         image: "NASA10.jpg"
 development:
   <<: *defaults
