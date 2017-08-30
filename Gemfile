@@ -17,9 +17,19 @@ gem 'cells-rails', '~> 0.0.8'
 gem 'cells-slim', '~> 0.0.5'
 gem 'jquery-rails', '~> 4.3.1'
 gem 'meta-tags', '~> 2.6.0'
-gem 'settingslogic', '~>2.0.9'
+gem 'settingslogic', '~> 2.0.9'
+gem 'unicorn', '~> 5.3.0'
+gem 'activeadmin', '~> 1.1.0'
+gem 'aws-sdk', '~> 3.0.0'
 
 group :development, :test do
+  # deploy
+  gem 'capistrano', '~> 3.9.0'
+  gem 'capistrano-bundler', '~> 1.2.0'
+  gem 'capistrano-rbenv', '~> 2.1.1'
+  gem 'capistrano3-unicorn', '~> 0.2.1'
+  gem 'capistrano-rails', '~> 1.3.0'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'bullet'
