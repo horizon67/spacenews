@@ -2,7 +2,7 @@ set :branch, ENV['BRANCH'] || "master"
 set :stage, :production
 set :rails_env, 'production'
 set :unicorn_rack_env, 'production'
-
+require 'pry'
 require 'aws-sdk'
 ec2 = Aws::EC2::Client.new(access_key_id: ENV['AWS_ACCESS_KEY_ID'],
                            secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],

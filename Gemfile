@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 git_source(:github) {|repo_name| 'https://github.com/#{repo_name}' }
 gem 'rails', '5.1.3'
 
+gem "therubyracer", platforms: :ruby
 gem 'sass-rails', '~> 5.0.6'
 gem 'sass-globbing', '~> 1.1.5'
 gem 'slim-rails', '~> 3.1.2'
@@ -34,8 +35,6 @@ group :development, :test do
   gem 'byebug'
   gem 'bullet'
   gem 'factory_girl_rails'
-  gem 'pry-rails'
-  gem 'pry-byebug'
 end
 
 group :development do
@@ -46,3 +45,6 @@ group :development do
   gem 'spring-watcher-listen'
   gem 'annotate'
 end
+
+gem 'pry-rails'
+gem 'pry-byebug'
