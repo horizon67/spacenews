@@ -1,0 +1,13 @@
+#intro.intro
+  #intro-sec.intro-sec.section[name="Intro Posts"]
+    #HTML22.widget.HTML[data-version="1"]
+      .feat-content
+        ul
+          - @posts.each do |post|
+            li
+              = link_to image_tag(post.image), post_path(post), class: "rcp-thumb"
+              .post-panel
+                h3.rcp-title
+                  = link_to post_path(post) do
+                    = post.title
+        .clear
