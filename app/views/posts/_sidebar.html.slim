@@ -4,14 +4,14 @@
     = cell(:popular_post).(:index)
     #BlogArchive1.widget.BlogArchive[data-version="1"]
       h2
-        | 記事アーカイブ
+        | アーカイブ
       .widget-content
         #ArchiveList
           #BlogArchive1_ArchiveList
             - month_a = (0..10).map{|i| [(Time.zone.now - i.month).strftime("%Y年%-m月"), (Time.zone.now - i.month).strftime("%Y-%m")]}
             = select_tag 'post[published_month]',
               options_for_select(month_a, :selected => params[:published_month]),
-              {id: "js__change__trigger", prompt: "記事アーカイブ"}
+              {id: "js__change__trigger", prompt: ""}
         .clear
         span.widget-item-control
           span.item-control.blog-admin
