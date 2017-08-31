@@ -14,12 +14,11 @@
                   p.description
                     span
 
-        .header-ads
-          #ads-content.section[name="Ads 728x90"]
-            #HTML1.widget.HTML[data-version="1"]
-              a[href="https://px.a8.net/svt/ejp?a8mat=2TPISC+912P2Q+2VWU+HX5B5" target="_blank" rel="nofollow"]
-                img[border="0" width="728" height="90" alt="" src="https://www29.a8.net/svt/bgt?aid=170831964546&wid=001&eno=01&mid=s00000013467003010000&mc=1"]
-              img[border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=2TPISC+912P2Q+2VWU+HX5B5" alt=""]
+        - if Rails.env.production?
+          .header-ads
+            #ads-content.section[name="Ads 728x90"]
+              #HTML1.widget.HTML[data-version="1"]
+                = render :partial => "header_ads"
     .clear
     #content-wrapper.row
       = cell(:intro_post).(:index)

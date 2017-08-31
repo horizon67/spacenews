@@ -18,10 +18,13 @@
             = link_to '#', class: "quickedit" do
               img[alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18"]
         .clear
-    #HTML9.widget.HTML[data-version="1"]
-      a[href="https://px.a8.net/svt/ejp?a8mat=2TPISC+9IXP82+4T2+6KU8H" target="_blank" rel="nofollow"]
-        img[border="0" width="336" height="280" alt="" src="https://www23.a8.net/svt/bgt?aid=170831964576&wid=001&eno=01&mid=s00000000623001105000&mc=1"]
-        img[border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=2TPISC+9IXP82+4T2+6KU8H" alt=""]
+    - if Rails.env.production?
+      #HTML9.widget.HTML[data-version="1"]
+        = render :partial => "sidebar_ads1"
+      #HTML10.widget.HTML[data-version="1"]
+        = render :partial => "sidebar_ads3"
+      #HTML10.widget.HTML[data-version="1"]
+        = render :partial => "sidebar_ads2"
 .clear
 
 javascript:
