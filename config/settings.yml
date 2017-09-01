@@ -3,7 +3,7 @@ defaults: &defaults
     name: 宇宙ニュース
     page_title: ニュース記事一覧
     page_description: 宇宙に関するニュース記事を一覧にしています。
-    page_keywords: 宇宙,ニュース,News,記事,まとめ
+    page_keywords: 宇宙,最新,ニュース,News,記事,まとめ
     meta:
       ogp:
         type: article
@@ -28,7 +28,7 @@ production:
     name: 宇宙ニュース
     page_title: ニュース記事一覧
     page_description: 宇宙に関するニュース記事を一覧にしています。
-    page_keywords: 宇宙,ニュース,News,記事,まとめ
+    page_keywords: 宇宙,最新,ニュース,News,記事,まとめ
     meta:
       ogp:
         type: article

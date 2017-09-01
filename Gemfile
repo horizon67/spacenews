@@ -23,9 +23,8 @@ gem 'meta-tags', '~> 2.6.0'
 gem 'settingslogic', '~> 2.0.9'
 gem 'unicorn', '~> 5.3.0'
 gem 'devise', '~> 4.3.0'
-#gem 'activeadmin', '~> 1.1.0'
+gem 'activeadmin', '~> 1.1.0'
 gem 'aws-sdk', '~> 3.0.0'
-#gem "rack-contrib", '~> 1.3.0', require: "rack/contrib"
 
 group :development, :test do
   # deploy
