@@ -1,3 +1,7 @@
+- set_meta_tags title: "#{@post.title}",
+                description: @post.content.truncate(160),
+                og: {image: @post.image.present? ? @post.image.url(:w755xh500) : image_tag("3.jpg", size: "755x500")}
+
 #pages-wrap.index.home
   #outer-wrapper
     #header-blog
