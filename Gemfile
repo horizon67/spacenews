@@ -51,6 +51,7 @@ group :development do
   gem 'spring-watcher-listen'
   gem 'annotate'
 end
+gem 'listen'
 
 gem 'pry-rails'
 gem 'pry-byebug'
