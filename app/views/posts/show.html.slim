@@ -67,9 +67,9 @@
                         div[dir="ltr" style="text-align: left;" trbidi="on"]
                           .separator[style="clear: both; text-align: center;"]
                             - if @post.image.present?
-                              = image_tag(@post.image.url(:w755xh500), :size =>"755x500", :alt => @post.title)
+                              = image_tag(@post.image.url(:w755xh500), :alt => @post.title)
                             - else
-                              = image_tag("3.jpg", size: "755x500")
+                              = image_tag("3.jpg", :alt => @post.title)
                           br
                         br
                         h3
