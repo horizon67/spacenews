@@ -13,17 +13,12 @@
               options_for_select(month_a, :selected => params[:published_month]),
               {id: "js__change__trigger", prompt: ""}
         .clear
-        span.widget-item-control
-          span.item-control.blog-admin
-            = link_to '#', class: "quickedit" do
-              img[alt="" height="18" src="https://resources.blogblog.com/img/icon18_wrench_allbkg.png" width="18"]
-        .clear
     - if Rails.env.production?
       #HTML9.widget.HTML[data-version="1"]
         = render :partial => "sidebar_ads1"
       #HTML10.widget.HTML[data-version="1"]
         = render :partial => "sidebar_ads3"
-      #HTML10.widget.HTML[data-version="1"]
+      /#HTML10.widget.HTML[data-version="1"]
         = render :partial => "sidebar_ads2"
 .clear
 

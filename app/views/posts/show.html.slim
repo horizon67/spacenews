@@ -1,0 +1,94 @@
+#pages-wrap.index.home
+  #outer-wrapper
+    #header-blog
+      .header-content.row
+        .header-logo
+          #logo_blog.section[name="Logo"]
+            #Header1.widget.Header[data-version="1"]
+              #header-inner
+                .titlewrapper
+                  = link_to '/' do
+                    h1.title
+                      = image_tag("logo.png", size: "220x45", alt: "宇宙ニュース")
+                .descriptionwrapper
+                  p.description
+                    span
+
+        - if Rails.env.production?
+          .header-ads
+            #ads-content.section[name="Ads 728x90"]
+              #HTML1.widget.HTML[data-version="1"]
+                = render :partial => "header_ads"
+    .clear
+    #content-wrapper.row
+      #main-wrapper
+        #ads-blog
+          #ads-home.home-ad.no-items.section[name="Ads Home/Post (728x90)"]
+
+        #main.main.section[name="Main Wrapper"]
+          #Blog1.widget.Blog[data-version="1"]
+            .blog-posts.hfeed
+              .post-outer
+                .post
+                  div[itemprop="blogPost" itemscope="itemscope" itemtype="http://schema.org/BlogPosting"]
+                    meta[content="https://3.bp.blogspot.com/-zbLKH2-dOhI/WXRxg4EywWI/AAAAAAAAJ9A/L4Aul2Shy1oIMKEIcMhHIGbsa5qUMlNDwCLcBGAs/s1600/1181-1152x759.jpg" itemprop="image"]
+                    .post-header
+                      .breadcrumbs[xmlns:v="http://rdf.data-vocabulary.org/#"]
+                        span[typeof="v:Breadcrumb"]
+                          = link_to "TOP", root_path, class: "bhome"
+                        brc
+                          |　/　
+                        span
+                          = @post.title
+                      br
+                      .post-head
+                        h1.post-title.entry-title[itemprop="name headline"]
+                          = @post.title
+                      .post-meta
+                        span.post-author.vcard
+
+                        span.post-timestamp
+                          i.fa.fa-clock-o
+                          = @post.published_at.strftime("%Y年%_m月%e日")
+                        span.label-head
+                          i.fa.fa-user
+                          = @post.source_name
+                      .ads-posting
+                        a[name="ad-post"]
+                    article
+                      #post-body-3989991725287816515.post-body.entry-content[itemprop="articleBody"]
+
+                      meta[content="                Leto enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...." name="twitter:description"]
+                      div[dir="ltr" style="text-align: left;" trbidi="on"]
+                        div[dir="ltr" style="text-align: left;" trbidi="on"]
+                          .separator[style="clear: both; text-align: center;"]
+                            - if @post.image.present?
+                              = image_tag(@post.image.url(:w755xh500), :size =>"755x500", :alt => @post.title)
+                            - else
+                              = image_tag("3.jpg", size: "755x500")
+                          br
+                        br
+                        h3
+                         | 要約
+                        - @post.summary.each_line.map(&:chomp).each do |row|
+                          li
+                            = row
+                        br
+                    .articleMore
+                      = link_to "記事を読む", @post.source_url
+                    br 
+                    br 
+                      - if Rails.env.production?
+                        = render partial: "footer_ads"
+      = render partial: "sidebar"
+    .clear
+  #footer-wrapper
+    #footer
+      /.footer-sections.row
+    .footer-wrapper
+      .footer-sec.row
+        .copyright
+          |  ©Copyright 2017 Samurai-Lab
+.back-to-top
+  a#back-to-top[href="#" title="back to top"]
+    i.fa.fa-long-arrow-up

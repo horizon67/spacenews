@@ -5,7 +5,7 @@
         ul
           - @posts.each do |post|
             li
-              = link_to image_tag(post.image), post_path(post), class: "rcp-thumb"
+              = link_to image_tag(Settings.intro.posts.find{|p| p[:id] == post.id}[:image]), post_path(post), class: "rcp-thumb"
               .post-panel
                 h3.rcp-title
                   = link_to post_path(post) do

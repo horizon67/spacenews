@@ -25,6 +25,8 @@ gem 'unicorn', '~> 5.3.0'
 gem 'devise', '~> 4.3.0'
 gem 'activeadmin', '~> 1.1.0'
 gem 'aws-sdk', '~> 3.0.0'
+gem 'carrierwave', '~> 1.1.0'
+gem "mini_magick", '~> 4.8.0'
 
 group :development, :test do
   # deploy

@@ -3,9 +3,7 @@ class IntroPostCell < Cell::ViewModel
   def index
     @posts = []
     Settings.intro.posts.each do |hash|
-      post = Post.find(hash[:id])
-      post.image = hash[:image]
-      @posts << post
+      @posts << Post.find(hash[:id])
     end
     render
   end

@@ -35,7 +35,10 @@
                     .block-image
                       .thumb
                         = link_to post_path(post) do
-                          = image_tag("#{(1..100).to_a.sample}.jpg")
+                          - if post.image.present?
+                            = image_tag(post.image.url(:thumb), :size =>"300x200", :alt => post.title)
+                          - else
+                            = image_tag("#{(1..100).to_a.sample}.jpg")
                     .post-header
 
                     article
@@ -47,7 +50,7 @@
                         #meta-post
                           i.fa.fa-user
                           / TODO: リストページに飛ばす
-                          a.g-profile[href="" rel="author" title="#{post.source_name}"]
+                          = link_to post_path(post), title: "#{post.source_name}", class: "g-profile" do
                             span[itemprop="name"]
                               = post.source_name
                           i.fa.fa-clock-o
@@ -57,21 +60,6 @@
                           span
                             = post.content
                         div[style="clear: both;"]
-                    /.hreview
-                      span.item
-                        span.fn
-                          | Exquisite Admitting Cordially September Newspaper
-                        img.photo[alt="Exquisite Admitting Cordially September Newspaper" src="https://4.bp.blogspot.com/-SXkiMit8exs/WXRwbuTnOEI/AAAAAAAAJ8o/A9JeQBJsLz0Jv_yNXhWAZMfEUI6ytYQjACLcBGAs/s72-c/1201-768x506.jpg"]
-                      |  Reviewed by 
-                      span.reviewer
-                        | Rina Chaudhary
-                      |  on 
-                      span.dtreviewed
-                        |  August 01, 2016 
-                        span.value-title[title="August 01, 2016"]
-                      |  Rating: 
-                      span.rating
-                        | 5
                     div[style="clear:both"]
                     .post-footer
             #blog-pager.blog-pager

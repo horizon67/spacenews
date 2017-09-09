@@ -25,6 +25,7 @@ db/schema.rb
 Thumbs.db
 tags
 vendor/bundle/
+public/uploads/
 
 /node_modules
 /yarn-error.log

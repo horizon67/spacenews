@@ -8,7 +8,10 @@
         - @posts.each do |post|
           li
             .wid-thumb
-              = link_to image_tag("#{(1..100).to_a.sample}.jpg"), post_path(post), class: "mag-thumb"
+              - if post.image.present?
+                = link_to image_tag(post.image.url(:thumb), :size =>"134x89", :alt => post.title), post_path(post), class: "mag-thumb"
+              - else
+                = link_to image_tag("#{(1..100).to_a.sample}.jpg"), post_path(post), class: "mag-thumb"
             .p-head
               h3.wrp-titulo
                 = link_to post_path(post) do

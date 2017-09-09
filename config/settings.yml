@@ -7,7 +7,7 @@ defaults: &defaults
     meta:
       ogp:
         type: article
-        image_path: http://localhost:3000/images/NASA7.jpg
+        image_path: http://localhost:3000/images/og.jpg
   intro:
     posts:
       - id: 136
@@ -32,7 +32,7 @@ production:
     meta:
       ogp:
         type: article
-        image_path: https://xn--zck9awe6du60xdda.com/images/NASA7.jpg
+        image_path: https://xn--zck9awe6du60xdda.com/images/og.jpg
   intro:
     posts:
       - id: 116
