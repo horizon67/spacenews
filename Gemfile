@@ -27,6 +27,7 @@ gem 'activeadmin', '~> 1.1.0'
 gem 'aws-sdk', '~> 3.0.0'
 gem 'carrierwave', '~> 1.1.0'
 gem "mini_magick", '~> 4.8.0'
+gem 'sitemap_generator', '~> 5.3.1'
 
 group :development, :test do
   # deploy
