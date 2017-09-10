@@ -25,6 +25,17 @@ ActiveAdmin.register Post do
     f.actions
   end
 
+  index do
+    id_column
+    column :title
+    column :source_name
+    column :source_url
+    column :published_at do |p| p.published_at.try(:strftime,"%Y-%m-%d  %H:%M:%S") end
+    column :created_at do |p| p.created_at.try(:strftime,"%Y-%m-%d  %H:%M:%S") end
+    column :updated_at do |p| p.updated_at.try(:strftime,"%Y-%m-%d  %H:%M:%S") end
+    actions
+  end
+
   show do
     attributes_table do
       row :title
