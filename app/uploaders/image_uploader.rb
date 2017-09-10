@@ -3,6 +3,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
+  include CarrierWave::OptimizeImage
 
   # Choose what kind of storage to use for this uploader:
   storage :file
@@ -45,6 +46,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # def filename
   #   "something.jpg" if original_filename
   # end
+  process :optimize
 
   version :thumb do
     process resize_to_fit: [300, 200]
