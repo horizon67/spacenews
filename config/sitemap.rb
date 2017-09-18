@@ -28,4 +28,7 @@ SitemapGenerator::Sitemap.create do
   Post.where.not(summary: nil).each do |post|
     add post_path(post.id), :changefreq => 'weekly', :lastmod => post.updated_at
   end
+  (0..9).map{|i| (Time.zone.now - i.month).strftime("%Y-%m")}.each do |month|
+    add posts_published_month_path(published_month: month)
+  end
 end
