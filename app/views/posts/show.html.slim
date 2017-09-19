@@ -84,7 +84,7 @@
                     br 
                       - if Rails.env.production?
                         = render partial: "footer_ads"
-      = render partial: "sidebar"
+      = render partial: "sidebar", locals: {ads: true}
     .clear
   #footer-wrapper
     #footer

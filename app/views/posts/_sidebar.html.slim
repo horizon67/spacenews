@@ -13,7 +13,7 @@
               options_for_select(month_a, :selected => params[:published_month]),
               {id: "js__change__trigger", prompt: ""}
         .clear
-    - if Rails.env.production?
+    - if Rails.env.production? and ads == true
       #HTML9.widget.HTML[data-version="1"]
         = render :partial => "sidebar_ads1"
       #HTML10.widget.HTML[data-version="1"]

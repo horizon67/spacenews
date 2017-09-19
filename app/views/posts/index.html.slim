@@ -65,7 +65,7 @@
             #blog-pager.blog-pager
               #blog-pager.blog-pager
                 = paginate @posts
-      = render partial: "sidebar"
+      = render partial: "sidebar", locals: {ads: true}
     .clear
   #footer-wrapper
     #footer

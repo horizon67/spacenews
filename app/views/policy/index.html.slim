@@ -16,11 +16,6 @@
                   p.description
                     span
 
-        - if Rails.env.production?
-          .header-ads
-            #ads-content.section[name="Ads 728x90"]
-              #HTML1.widget.HTML[data-version="1"]
-                = render :partial => "header_ads"
     .clear
     #content-wrapper.row
       #main-wrapper
@@ -77,7 +72,7 @@
                           | ■運営者
                         p
                           = link_to 'Samurai-Lab', "mailto:rie.samurailab@gmail.com"
-      = render partial: "posts/sidebar"
+      = render partial: "posts/sidebar", locals: {ads: false}
     .clear
   #footer-wrapper
     #footer
