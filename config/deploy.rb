@@ -2,7 +2,7 @@
 lock "3.9.0"
 
 set :application, "spacenews"
-set :repo_url, "git@bitbucket.org:shinichimaruo/spacenews.git"
+set :repo_url, "git@github.com:horizon67/spacenews.git"
 
 set :branch, 'master'
 set :deploy_to, "/home/app/spacenews"
