@@ -26,6 +26,7 @@ Thumbs.db
 tags
 vendor/bundle/
 public/uploads/
+public/sitemap.xml.gz
 
 /node_modules
 /yarn-error.log

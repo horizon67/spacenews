@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  has_many :post_comments
   mount_uploader :image, ImageUploader
   scope :order_default, ->{ order('published_at desc') }
   #attr_accessor :image
